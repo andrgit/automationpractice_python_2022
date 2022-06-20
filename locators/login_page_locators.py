@@ -9,5 +9,3 @@ class LoginPageLocators:
     WELCOME_TO_ACCOUNT_TEXT = (By.XPATH, "//*[@class='info-account']")
     SEARCH_FIELD_LOCATOR = (By.XPATH, "//*[@id='search_query_top']")
     SEARCH_FIELD_BUTTON = (By.XPATH, "//*[@name='submit_search']")
-
-

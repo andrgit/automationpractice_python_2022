@@ -1,5 +1,4 @@
 import allure
-import pytest
 
 import constans
 from pages.main_page import MainPage
@@ -20,7 +19,8 @@ def test_login_and_buy_2_summer_dress(driver):
         iii. Select Blue as color
         iv. Pay by bank wire
     """
-    email_test = constans.EMAIL_LOGIN
+
+    email_test = "ciprexullagri-3473@yopmail.com"
     passw_test = constans.PASSWORD_LOGIN
     page = MainPage(driver)
     with allure.step('Open main page'):

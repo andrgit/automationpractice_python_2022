@@ -27,3 +27,4 @@ class RegistrationPageLocators:
     ZIP_CODE_FIELD_LOCATOR = (By.XPATH, "//*[@id='postcode']")
     MOBILE_PHONE_FIELD_LOCATOR = (By.XPATH, "//*[@id='phone_mobile']")
     REGISTER_BUTTON_LOCATOR = (By.XPATH, "//*[@id='submitAccount']")
+    ACCOUNT_CREATION_FORM = (By.XPATH, "//*[@id='account-creation_form']")
