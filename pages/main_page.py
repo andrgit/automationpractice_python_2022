@@ -13,5 +13,3 @@ class MainPage(BasePage):
         sign_in_btn = self.find_element(MainPageLocators.SIGN_IN_BUTTON)
         sign_in_btn.click()
         return SignInPage(self.driver, self.driver.current_url)
-
-

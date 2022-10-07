@@ -14,4 +14,5 @@ def test_create_new_user_with_created_email_negative(driver):
     page.open()
     main_page = page.open_sign_in_page()
     sign_in_page = main_page.user_create_account(test_email)
-    assert "An account using this email address has already been registered." in sign_in_page[0].text
+    assert "email address has already been registered." \
+           in sign_in_page[0].text

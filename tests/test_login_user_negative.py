@@ -20,4 +20,5 @@ def test_login_user_negative(driver):
         login_page = page.open_sign_in_page()
     with allure.step('Try to login negative scenario'):
         sign_in_page = login_page.user_login(email_test, passw_test)
-    assert "Authentication failed" in sign_in_page[0].text
+    assert "Authentication failed" or "error" in \
+           sign_in_page.text, "Problem with negative test"

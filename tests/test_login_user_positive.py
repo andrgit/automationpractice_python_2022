@@ -3,6 +3,7 @@ import pytest
 
 import constans
 from pages.main_page import MainPage
+from webdriver_auto_update import check_driver
 
 
 @allure.story("The Sign-in process for user - positive scenario")
@@ -20,4 +21,5 @@ def test_login_user_positive(driver):
         login_page = page.open_sign_in_page()
     with allure.step('Try to login positive'):
         sign_in_page = login_page.user_login(email_test, passw_test)
-    assert "Welcome to your account" in sign_in_page[0].text, "Problem with positive test"
+    assert 'ORDER HISTORY AND DETAILS' or 'MY PERSONAL INFORMATION' in \
+           sign_in_page.text, "Problem with positive test"

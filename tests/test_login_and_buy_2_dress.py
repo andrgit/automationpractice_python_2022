@@ -31,4 +31,5 @@ def test_login_and_buy_2_summer_dress(driver):
         sign_in_page = login_page.user_login(email_test, passw_test)
         add_item_cart = sign_in_page[1].add_dress_to_card_and_buy()
     with allure.step('Check add and buy dress'):
-        assert "Your order on My Store is complete" in add_item_cart.text, "Problem with order"
+        assert "Your order on My Store is complete" in add_item_cart.text, \
+            "Problem with order"
