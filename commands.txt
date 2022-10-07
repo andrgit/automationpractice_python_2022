@@ -1,4 +1,0 @@
-#Commands for begin tests
-
-pytest -s -v tests
-pytest -q -v
