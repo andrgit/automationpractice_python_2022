@@ -5,6 +5,7 @@ from locators.registration_page_locators import RegistrationPageLocators
 from locators.sign_in_page_locators import SignInPageLocators
 from pages.base_page import BasePage
 from pages.create_user_page import CreateUserPage
+from pages.forgot_password_page import ForgotPasswPage
 from pages.login_page import LoginPage
 from selenium.webdriver.support import expected_conditions as EC
 
@@ -44,3 +45,10 @@ class SignInPage(BasePage):
         elif "Welcome to your account" in sign_in_result[0].text:
             return sign_in_result, LoginPage(self.driver,
                                              self.driver.current_url)
+
+    def forgot_your_passw_link(self):
+        forgot_password_btn = self.find_element(
+            SignInPageLocators.FORGOT_YOUR_PASSW_LINK2)
+        forgot_password_btn.click()
+        return ForgotPasswPage(self.driver,
+                               self.driver.current_url)

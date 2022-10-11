@@ -7,6 +7,7 @@ class SignInPageLocators:
     EMAIL_FIELD_LOG_IN = (By.XPATH, "//*[@id='email']")
     PASSW_FIELD_LOG_IN = (By.XPATH, "//*[@id='passwd']")
     FORGOT_YOUR_PASSW_LINK = (By.XPATH, "//*[@id='login_form']/div/p[1]/a")
+    FORGOT_YOUR_PASSW_LINK2 = (By.CSS_SELECTOR, "p.lost_password.form-group a")
     SIGN_IN_BTN_LOGIN = (By.XPATH, "//*[@id='SubmitLogin']")
     FAIL_LOGIN_MESSG = (By.XPATH, "//*[@id='center_column']/div[1]")
     ERROR_LOGIN_REGISTERED = (By.XPATH, "//*[@id='create_account_error']//li")
